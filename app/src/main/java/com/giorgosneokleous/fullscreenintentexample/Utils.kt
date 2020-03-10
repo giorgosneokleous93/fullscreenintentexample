@@ -9,6 +9,7 @@ import android.os.Build
 import androidx.core.app.NotificationCompat
 
 fun Context.showNotificationWithFullScreenIntent(
+    isLockScreen: Boolean = false,
     channelId: String = CHANNEL_ID,
     title: String = "Title",
     description: String = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -19,7 +20,7 @@ fun Context.showNotificationWithFullScreenIntent(
         .setContentTitle(title)
         .setContentText(description)
         .setPriority(NotificationCompat.PRIORITY_HIGH)
-        .setFullScreenIntent(getFullScreenIntent(), true)
+        .setFullScreenIntent(getFullScreenIntent(isLockScreen), true)
 
 
     val notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
@@ -46,8 +47,12 @@ private fun NotificationManager.buildChannel() {
     }
 }
 
-private fun Context.getFullScreenIntent(): PendingIntent {
-    val intent = Intent(this, FullScreenActivity::class.java)
+private fun Context.getFullScreenIntent(isLockScreen: Boolean): PendingIntent {
+    val destination = if (isLockScreen)
+        LockScreenActivity::class.java
+    else
+        FullScreenActivity::class.java
+    val intent = Intent(this, destination)
 
     // flags and request code are 0 for the purpose of demonstration
     return PendingIntent.getActivity(this, 0, intent, 0)

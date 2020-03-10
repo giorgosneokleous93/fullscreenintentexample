@@ -10,16 +10,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         findViewById<Button>(R.id.showFullScreenIntentButton).setOnClickListener {
-            showFullScreenIntent()
+            showNotificationWithFullScreenIntent()
         }
 
         findViewById<Button>(R.id.showFullScreenIntentWithDelayButton).setOnClickListener {
-            scheduleFullScreenIntent()
+            scheduleNotification(false)
+        }
+
+        findViewById<Button>(R.id.showFullScreenIntentLockScreenWithDelayButton).setOnClickListener {
+            scheduleNotification(true)
         }
     }
-
-    private fun scheduleFullScreenIntent() = scheduleNotification()
-
-    private fun showFullScreenIntent() = showNotificationWithFullScreenIntent()
 }
 
