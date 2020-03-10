@@ -19,10 +19,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun scheduleFullScreenIntent() {
-        TODO("Not yet implemented")
+        TODO("To be done")
     }
 
-    private fun showFullScreenIntent() {
-        TODO("Not yet implemented")
-    }
+    private fun showFullScreenIntent() = showNotificationWithFullScreenIntent()
 }
+

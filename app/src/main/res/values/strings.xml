@@ -2,4 +2,5 @@
     <string name="app_name">FullScreenIntentExample</string>
     <string name="show_full_screen_intent_button">Show Full Screen Intent</string>
     <string name="show_scheduled_full_screen_intent">Scheduled full screen intent</string>
+    <string name="full_screen_activity">Full Screen Activity</string>
 </resources>
