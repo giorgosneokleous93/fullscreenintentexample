@@ -18,9 +18,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun scheduleFullScreenIntent() {
-        TODO("To be done")
-    }
+    private fun scheduleFullScreenIntent() = scheduleNotification()
 
     private fun showFullScreenIntent() = showNotificationWithFullScreenIntent()
 }
