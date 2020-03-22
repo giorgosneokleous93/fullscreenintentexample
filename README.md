@@ -1,5 +1,8 @@
 # Full-Screen Intent Notification Example
 
+[![Featured in androidweekly.net](https://androidweekly.net/issues/issue-406/badge)](https://androidweekly.net/issues/issue-406)
+
+
 This is a companion project for one of my blog posts.
 
 Blog post can be found [here](https://www.giorgosneokleous.com/2020/03/15/full-screen-intent-notifications-android/).
