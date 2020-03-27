@@ -1,6 +1,6 @@
 # Full-Screen Intent Notification Example
 
-[![Featured in androidweekly.net](https://androidweekly.net/issues/issue-406/badge)](https://androidweekly.net/issues/issue-406)
+[![Featured in androidweekly.net](https://androidweekly.net/issues/issue-406/badge)](https://androidweekly.net/issues/issue-406) ![CI](https://github.com/giorgosneokleous93/fullscreenintentexample/workflows/CI/badge.svg)
 
 
 This is a companion project for one of my blog posts.
